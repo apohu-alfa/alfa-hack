@@ -1,0 +1,151 @@
+.appShell {
+  max-inline-size: 1200px;
+  margin-inline: auto;
+  padding-inline: 2rem;
+}
+.siteHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-block: 1.5rem;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  font-weight: 700;
+}
+.brandMark {
+  display: grid;
+  place-items: center;
+  inline-size: 2.75rem;
+  block-size: 2.75rem;
+  background: var(--color-light-accent-primary);
+  color: white;
+  border-radius: 0.75rem;
+  font-size: 1.75rem;
+}
+.mainContent {
+  padding-block: 3rem;
+}
+.intro {
+  max-inline-size: 750px;
+  margin-block-end: 2.5rem;
+}
+.eyebrow {
+  color: var(--color-light-text-secondary);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  margin-block-end: 1rem;
+}
+.introDescription {
+  font-size: 1.125rem;
+  max-inline-size: 620px;
+  color: var(--color-light-text-secondary);
+}
+.workspace {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+  gap: 2rem;
+  align-items: start;
+}
+.panel {
+  background: var(--color-light-base-bg-primary);
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  min-inline-size: 0;
+}
+.panelContent {
+  padding-block: 1.5rem 0.5rem;
+}
+.form,
+.componentList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.muted {
+  color: var(--color-light-text-secondary);
+  margin-block-end: 0;
+}
+.buttonRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+.starterNotes {
+  padding: 1.5rem 0;
+  min-inline-size: 0;
+}
+.starterNotes ul {
+  padding-inline-start: 1.25rem;
+  line-height: 2;
+  margin-block-end: 1.5rem;
+}
+.starterNotes pre {
+  background: var(--color-light-base-bg-primary);
+  padding: 1rem;
+  border-radius: 0.75rem;
+  overflow-x: auto;
+  line-height: 1.7;
+}
+.sampleContent {
+  padding: 1.5rem;
+  margin: 0;
+  background: var(--color-light-base-bg-secondary);
+  border-radius: 0.75rem;
+}
+.projectSummary {
+  display: grid;
+  gap: 0.5rem;
+}
+.projectSummary dt {
+  color: var(--color-light-text-secondary);
+}
+.projectSummary dd {
+  margin-inline: 0;
+  margin-block-end: 1rem;
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+}
+.siteFooter {
+  padding-block: 1.5rem;
+  font-size: 0.875rem;
+  color: var(--color-light-text-secondary);
+}
+.skipLink {
+  position: absolute;
+  inset-block-start: -100px;
+  padding: 0.75rem;
+  background: white;
+  z-index: 100;
+}
+.skipLink:focus {
+  inset-block-start: 0.5rem;
+}
+a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
+
+@media (max-width: 760px) {
+  .appShell {
+    padding-inline: 1rem;
+  }
+  .siteHeader {
+    flex-wrap: wrap;
+  }
+  .mainContent {
+    padding-block: 1.5rem;
+  }
+  .workspace {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+  }
+  .panel {
+    padding: 1rem;
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "alfa-hack",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "pnpm --filter @alfa-hack/frontend dev",
+    "build": "pnpm --filter @alfa-hack/frontend build",
+    "preview": "pnpm --filter @alfa-hack/frontend preview",
+    "lint": "pnpm --filter @alfa-hack/frontend lint",
+    "test": "pnpm --filter @alfa-hack/frontend test",
+    "format": "pnpm --filter @alfa-hack/frontend format",
+    "types": "pnpm --filter @alfa-hack/frontend types",
+    "lint:fix": "pnpm --filter @alfa-hack/frontend lint:fix",
+    "format:check": "pnpm --filter @alfa-hack/frontend format:check",
+    "test:watch": "pnpm --filter @alfa-hack/frontend test:watch"
+  },
+  "engines": {
+    "node": "24.x"
+  }
+}
