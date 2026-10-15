@@ -1,6 +1,9 @@
 name: Test Runner
 
 on:
+  push:
+    branches:
+      - dev
   workflow_dispatch:
 
 jobs:
@@ -8,9 +11,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Check runner
-        run: |
-          echo "GitHub runner works!"
-          uname -a
-          node --version
-          docker --version
+      - name: Test
+        run: echo "Runner works!"
